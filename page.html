@@ -1,66 +1,322 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #c3b1e1;
+}
+
+.row {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333333;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 74.99%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 74.99%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Sufyan Mughal</h1>
+    <h2>Web Developer</h2>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div class="left-col">
+      <h2>Education</h2>
+      <div class="experience">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>NUST, 2019-2023</p>
+      </div>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>JavaScript/jQuery</li>
+        <li>PHP/MySQL</li>
+        <li>Responsive design</li>
+      </ul>
+    </div>
+
+    <div class="right-col">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>Web Developer</h3>
+        <p>ABC Company, 2023-Present</p>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>Develop and maintain company website using HTML, CSS, and JavaScript.</li>
+          <li>Create and manage databases using PHP and MySQL.</li>
+          <li>Collaborate with design team to implement responsive design.</li>
         </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section class="col-lg-12 col-md-12">
-        <h2>About Me</h2>
-        <p>I am a web developer with experience in HTML, CSS, and JavaScript. I am passionate about creating beautiful and responsive websites that provide a great user experience.</p>
-      </section>
-      
-      <section class="col-lg-12 col-md-6">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam felis eu risus condimentum, vel mattis nisl sollicitudin. Nullam aliquet diam diam, at faucibus mi aliquet ac. Integer quis nibh vel eros ultricies bibendum.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/300x200" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Nulla vel bibendum elit. Vestibulum sit amet sapien nec metus malesuada dictum. Ut sodales justo euismod libero commodo, nec hendrerit nisi tempor. In vel imperdiet odio.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/300x200" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Maecenas eleifend, lorem a convallis pellentesque, ipsum leo porttitor enim, sit amet consequat enim quam at lacus. Praesent nec lectus sed arcu sollicitudin aliquet vel a nibh.</p>
-          <a href="#">Learn More</a>
-        </div>
-      </section>
-      
-      <section class="col-lg-12 col-md-8">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea><br>
-          <input type="submit" value="Submit">
-        </form>
-      </section>
+
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="skill-row">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-row">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Communication</li>
+              <li>Problem solving</li>
+              <li>Teamwork</li>
+              <li>Time management</li>
+              <li>Leadership</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="experience">
+          <h2>Experience</h2>
+          <div class="job">
+            <h3>Software Developer</h3>
+            <h4>XYZ Company</h4>
+            <h5>June 2022 - Present</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="job">
+            <h3>Web Developer Intern</h3>
+            <h4>ABC Agency</h4>
+            <h5>Jan 2021 - May 2021</h5>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </section>
+
+        <section class="education">
+          <h2>Education</h2>
+          <div class="degree">
+            <h3>Bachelor of Computer Science</h3>
+            <h4>XYZ University</h4>
+            <h5>2018 - 2022</h5>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </section>
+      </div>
     </main>
-    
     <footer>
-      <p>&copy; 2023 My Portfolio</p>
+      <p>&copy; 2022 Sufyan Mughal. All rights reserved.</p>
     </footer>
   </body>
 </html>
